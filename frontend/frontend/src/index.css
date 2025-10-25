@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-inter;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-poppins font-semibold;
+  }
+  
+  body {
+    @apply font-inter text-gray-900 antialiased;
+  }
+  
+  .font-display {
+    @apply font-space-grotesk;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .font-poppins {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .font-space-grotesk {
+    font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  /* E-commerce specific typography */
+  .text-product-title {
+    @apply font-poppins font-semibold text-lg leading-tight;
+  }
+  
+  .text-product-price {
+    @apply font-poppins font-bold text-xl text-green-600;
+  }
+  
+  .text-product-description {
+    @apply font-inter text-sm text-gray-600 leading-relaxed;
+  }
+  
+  .text-button {
+    @apply font-inter font-medium;
+  }
+  
+  .text-nav {
+    @apply font-inter font-medium;
+  }
+}
+  
